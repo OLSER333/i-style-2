@@ -45,6 +45,8 @@
     <link rel="stylesheet" href="/themes/purple/assets/css/profile-salon/layout.css">
     <link rel="stylesheet" href="/themes/purple/assets/css/profile-salon/clients_header.css">
 
+    <link rel="stylesheet" href="/themes/purple/assets/css/promotion.css">
+
 
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

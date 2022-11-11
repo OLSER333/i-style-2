@@ -1,0 +1,382 @@
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    /*gap: 80px;*/
+}
+
+
+.promo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.promo-sup-header {
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    padding: 0 15px;
+
+    color: #383838;
+}
+
+
+@media (max-width: 700px) {
+    .promo-sup-header {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.promo-main-header {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #383838;
+}
+
+@media (max-width: 700px) {
+    .promo-main-header {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .promo-main-header::before {
+        /*display: none;*/
+    }
+}
+
+.promo-main-header strong {
+    position: relative;
+}
+
+.promo-main-header strong::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -15px;
+    width: 32px;
+    height: 8px;
+    background-image: url(/themes/purple/assets/images/logo-tilda.png?74566db…);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 32px;
+}
+
+
+/*//==================================================================*/
+
+.promo-choose-form {
+    margin: 30px 0;
+    display: flex;
+    gap: 15px;
+
+}
+
+@media (max-width: 700px) {
+    .promo-choose-form {
+        flex-direction: column;
+    }
+}
+
+.promo-choose-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.promo-choose-form label img {
+    width: 100%;
+}
+
+
+/*//==================================================================*/
+.w-100-per img {
+    width: 100%;
+}
+
+.promo-chosen-header {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #C75B7B;
+}
+
+@media (max-width: 700px) {
+    .promo-chosen-header {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.promo-chosen-photo {
+    max-width: 600px;
+}
+
+.promo-little-header {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #383838;
+}
+
+/*//==================================================================*/
+
+.promo-in-service-wrap-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 950px;
+    margin: 30px 0;
+
+}
+
+
+/*//==экран 3================================================================*/
+.promo-price-choose {
+
+}
+
+.promo-price-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .promo-price-form {
+        flex-direction: column;
+    }
+}
+
+.promo-select {
+}
+
+.promo-select label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 5px;
+    color: #383838;
+
+
+}
+
+.promo-select select {
+    width: 290px;
+    padding: 15px;
+    position: relative;
+}
+
+/*.promo-select select::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    right: 5%;*/
+/*    top: calc(50% - 20px);*/
+/*    background: url("/themes/purple/assets/images/arrow-down.svg") 0 0 / contain no-repeat ;*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+
+/*}*/
+/*//==экран 4================================================================*/
+.promo-chosen-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.promo-little-header {
+
+}
+
+.promo-inputs {
+    display: flex;
+    gap: 40px;
+}
+
+.promo-flex-inps {
+    display: flex;
+    gap: 5px;
+}
+
+/*//== promo-example================================================================*/
+.promo-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 20px;
+}
+
+.promo-example-header {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    max-width: 592px;
+    color: #383838;
+}
+
+@media (max-width: 700px) {
+    .promo-example-header {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.promo-card {
+    background: #FFFFFF;
+    position: relative;
+    margin: 60px 0px 40px;
+    position: relative;
+}
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    right: -144px;
+    bottom: -42px;
+    background: url('/themes/purple/assets/images/offer-flower.png') 0 0 / contain no-repeat;
+    width: 270px;
+    height: 300px;
+}
+
+.promo-card::after {
+    content: '';
+    position: absolute;
+    left: -160px;
+    top: 40px;
+    background: url('/themes/purple/assets/images/flower-footer.png') 0 0 / contain no-repeat;
+    width: 128px;
+    height: 164px;
+}
+
+@media (max-width: 700px) {
+    .promo-card::before {
+        display: none;
+    }
+
+    .promo-card::after {
+        display: none;
+    }
+
+}
+
+.promo-card-img {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.promo-card-img::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    background: url('/themes/purple/assets/images/best-icon.png') 0 0 / contain no-repeat;
+    width: 46px;
+    height: 53px;
+
+}
+
+.card-info {
+    display: grid;
+    grid-template-areas:
+        'first sec'
+        'first third';
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+
+}
+
+.card-info-avatar {
+    grid-area: first;
+    border-radius: 50%;
+    width: 60px;
+    justify-self: center;
+}
+
+.card-info-avatar img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.promo-info-service {
+    grid-area: sec;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #383838;
+    width: fit-content;
+
+    border: 1px solid #C75B7B;
+    border-radius: 4px;
+    padding: 8px
+}
+
+.promo-info-salon {
+    grid-area: third;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A8A8A8;
+}
+
+.promo-info-salon span {
+    color: #383838;
+}
+
+
+.promo-example-btn {
+    background: #C75B7B;
+    border: 1px solid #C75B7B;
+    border-radius: 6px;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.promo-example-btn.promo-example-btn_in-catalog {
+    width: 100%;
+    max-width: 595px;
+    margin: 20px 0 30px;
+}
