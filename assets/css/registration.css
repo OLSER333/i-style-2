@@ -1,0 +1,70 @@
+.auth-form {
+  max-width: 420px;
+  font-family: Nunito;
+}
+
+.social-auth-item {
+  width: 82px;
+  height: 62px;
+  border-radius: 6px;
+}
+
+.social-auth-item img{
+  width: 30px;
+  height: 30px;
+  margin: 16px 26px;
+}
+
+.auth-item-google-icon {
+  border: 1px solid #CDCDCD;
+}
+
+.auth-item-facebook-icon {
+  background: #3B5998;
+}
+
+.auth-item-twitter-icon {
+  background: #1DA1F2;
+}
+
+.social-auth-item-text-google,
+.social-auth-item-text {
+  display: none;
+  font-weight: 600;
+  font-size: 18px;
+  align-self: center;
+}
+
+.logo-tilda {
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+  .form-inputs {
+    flex-direction: column;
+  }
+
+  .form-inputs input.group-input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-auth-items {
+    flex-direction: column;
+  }
+
+  .social-auth-items a {
+    width: 100%;
+    display: flex;
+  }
+
+  .social-auth-item-text-google {
+    display: block;
+    color: #9E9E9E;
+  }
+
+  .social-auth-item-text {
+    display: block;
+    color: #FFFFFF;
+  }
+}

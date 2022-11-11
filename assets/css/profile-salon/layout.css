@@ -1,0 +1,248 @@
+.salon-frofile-info-on .breadcrumbs .breadcrumb-item {
+  display: flex !important;
+}
+
+.salon-frofile-info-on .wrapper-service-catalog {
+  padding: 0;
+  padding-top: 34px;
+  max-width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.salon-frofile-info-on .breadcrumbs, .salon-frofile-info-on .salon-wrapper {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: content-box;
+}
+
+.salon-content-box {
+  background-color: #F8F8F8;
+}
+
+.salon-content-box-wrapper {
+  max-width: 1240px;
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: content-box;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.salon-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.salon-menu {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 840px;
+  min-width: 600px;
+  width: 100%;
+
+  padding: 0px 34px;
+
+  border: 1px solid #F3F3F3;
+  border-radius: 6px;
+}
+
+@media (max-width: 880px) {
+  .salon-menu {
+    display: none;
+  }
+}
+
+.salon-menu a {
+  padding: 17px 0;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.salon-menu a.active {
+  color: var(--primary-color);
+  pointer-events: none;
+  font-weight: 600;
+}
+
+
+
+
+
+
+.my-service-item-action-text.hidden-btn {
+  display: none;
+}
+
+.salon-clients {
+  font-family: 'Nunito';
+}
+
+@media (max-width: 1000px) {
+  .salon-content-box-wrapper {
+    padding-top: 19px;
+  }
+}
+
+.salon-clients-base-header,
+.clients-base-list-item-information {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.salon-clients-base-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.salon-clients-base-header {
+  font-weight: 700;
+  font-size: 18px;
+  color: #9E9E9E;
+  padding: 23px 20px;
+}
+
+.clients-base-list-item {
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+  height: 60px;
+  padding: 17px 20px;
+}
+
+.clients-base-list-item-text {
+  font-size: 18px;
+}
+
+.clients-base-list-item-link {
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #C75B7B;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 137px;
+  overflow: hidden;
+}
+
+.clients-base-list-item-cancell {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.clients-base-list-item-cancell .item-cancell-window {
+  position: absolute;
+  width: 143px;
+  right: -6px;
+  top: 24px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 6px 15px;
+  font-size: 14px;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.25));
+  opacity: 1;
+  z-index: 1;
+}
+
+.clients-base-list-item-cancell .item-cancell-window img {
+  position: absolute;
+  top: -20%;
+  right: 5%;
+}
+
+.hidden-item-cancell-window {
+  display: none;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.hidden-header {
+  display: none;
+}
+
+.salon-clients .fa-clock-rotate-left {
+  font-size: 14px;
+}
+
+.black-list-btn {
+  font-family: 'Nunito';
+  font-size: 16px;
+  color: #BDA786;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding: 16px 16px;
+  height: 40px;
+  margin-left: auto;
+  border: 1px solid #BDA786;
+  border-radius: 6px;
+}
+
+@media (max-width: 1000px) {
+
+  .salon-clients-base-header,
+  .clients-base-list-item-information {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .clients-base-list-item {
+    max-width: 320px;
+    grid-gap: 15px;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+      "title info"
+      "btn btn";
+  }
+
+  .clients-base-list-item-information {
+    grid-area: info;
+  }
+
+  .salon-clients-base-header {
+    grid-area: title;
+    font-size: 18px;
+  }
+
+  .my-service-item-action-text {
+    grid-area: btn;
+    padding: 0;
+  }
+
+  .clients-base-list-item-cancell {
+    display: none;
+  }
+
+  .salon-clients-base-header {
+    padding: 0;
+  }
+
+  .salon-clients .primary-button {
+    width: 100%;
+  }
+
+  .salon-clients-base-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
+  }
+
+  .black-list-btn {
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+}

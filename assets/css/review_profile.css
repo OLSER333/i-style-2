@@ -1,0 +1,178 @@
+.show-review {
+  background-color: white;
+}
+
+.review-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.profile-review-item {
+  padding: 27px 25px;
+  margin-bottom: 20px;
+  box-shadow: 5px 4px 15px #f1f1f1;
+  border-radius: 7px;
+  border: 1px solid #E3E3E3;
+  background-color: white;
+  height: 251px;
+  max-height: 251px;
+}
+
+.profile-review-block {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.review-body-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.review-body-title-name {
+  font-weight: 700;
+  grid-area: name;
+}
+
+.profile-review-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.review-text {
+  overflow-wrap: anywhere;
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.review-main-photo .review-text {
+  max-width: 80%;
+}
+
+.review-text.review-item-text-shadow {
+  max-height: 52px;
+  overflow: hidden;
+}
+
+.review-body-title-date {
+  color: var(--gray-color);
+  grid-area: date;
+}
+
+.review-body-title-stars {
+  grid-area: stars;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.review-body .review-uncover-button {
+  margin-bottom: 15px;
+}
+
+.review-buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.review-buttons a:first-child {
+  height: 44px;
+}
+
+.review-photo-preview {
+  border-radius: 8px;
+}
+
+.swiper-hidden {
+  display: none;
+}
+
+.uncover-container ~ .review-main-photo {
+  position: absolute;
+  right: 0;
+  display: flex;
+  max-width: 150px;
+  max-height: 139px;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 1240px) {
+  .review-main-photo .review-text {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 680px) {
+  .review-main-photo .review-text {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 560px) {
+  .profile-review-item {
+    min-height: 200px;
+    height: auto;
+    max-height: 409px;
+    padding: 15px 17px 22px 21px;
+  }
+
+  .review-body-title {
+    display: grid;
+    grid-template-areas: 
+      "date stars"
+      "name stars";
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .review-main-photo .review-text {
+    max-width: 100%;
+  }
+
+  .review-buttons {
+    flex-direction: column;
+  }
+
+  .review-buttons a:first-child {
+    width: 100%;
+  }
+
+  .review-text.review-item-text-shadow {
+    max-height: 166px;
+  }
+
+  .review-main-photo.profile-review-item {
+    max-height: 510px;
+  }
+
+  .profile-review-container {
+    display: block;
+  }
+
+  .review-photo-preview {
+    position: initial;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .uncover-container ~ .review-main-photo {
+    position: static;
+    top: auto;
+    right: auto;
+  }
+}

@@ -1,0 +1,20 @@
+@media (max-width: 460px) {
+  .auth-radio-block-registration {
+    flex-direction: column;
+  }
+
+  .auth-radio-block-registration div:first-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth-radio-block-registration div:last-child {
+    justify-content: space-between;
+    width: auto;
+    gap: 40px;
+  }
+
+  .auth-radio-block-registration div:last-child label:last-child {
+    margin-right: 0;
+  }
+}
